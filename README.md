@@ -176,4 +176,9 @@ This project is developed for academic purposes as part of the Network and Infor
 - Nmap Network Mapper: https://nmap.org/
 - Vulscan NSE Script: https://github.com/scipag/vulscan
 - Claude AI: https://www.anthropic.com/
-- Google Gemini API: https://ai.google.dev/ 
+- Google Gemini API: https://ai.google.dev/
+- Filesystem MCP: https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+- Sqlite Local Database MCP: https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite
+- Web browsing MCP: https://github.com/nickclyde/duckduckgo-mcp-server
+- Gemini MCP: https://github.com/georgejeffers/gemini-mcp-server/tree/main
+- A Similar Project: https://github.com/davidfortytwo/AI-Vuln-Scanner
