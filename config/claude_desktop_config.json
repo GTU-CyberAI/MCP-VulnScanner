@@ -1,0 +1,61 @@
+{
+  "serverConfig": {
+    "command": "cmd.exe",
+    "args": [
+      "/c"
+    ]
+  },
+  "mcpServers": {
+    "desktop-commander": {
+      "command": "npx.cmd",
+      "args": [
+        "@wonderwhy-er/desktop-commander@latest"
+      ]
+    },
+    "mcp-security": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "<YOUR_PROJECT_PATH>/src/mcp-security",
+        "run",
+        "mcp-security.py"
+      ]
+    },
+    "ddg-search": {
+      "command": "uvx",
+      "args": ["duckduckgo-mcp-server"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "<PATH_TO_ANALYZE>"
+      ]
+    },
+    "gemini": {
+      "command": "node",
+      "args": [
+        "<YOUR_PROJECT_PATH>/src/gemini-mcp-server/dist/gemini_mcp_server.js"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<YOUR_GEMINI_API_KEY>"
+      },
+      "cwd": "<YOUR_PROJECT_PATH>/src/gemini-mcp-server"
+    },
+    "sqlite": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "<YOUR_PROJECT_PATH>/src/sqlite",
+        "run",
+        "mcp-server-sqlite",
+        "--db-path",
+        "<YOUR_PROJECT_PATH>/src/sqlite/test.db"
+      ],
+      "env": {
+        "PYTHONPATH": "<YOUR_PROJECT_PATH>/src/sqlite/src"
+      }
+    }
+  }
+}
