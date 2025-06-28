@@ -70,7 +70,14 @@ cd src/sqlite
 uv sync
 ```
 
-### Step 6: Configure Claude Desktop
+### Step 6: Install Web Browsing MCP Server
+
+```bash
+uv venv
+uv pip install duckduckgo-mcp-server
+```
+
+### Step 7: Configure Claude Desktop
 
 🔒 **SECURITY NOTICE**: The configuration file in this repository contains placeholder values only. **DO NOT** use it directly!
 
@@ -87,7 +94,7 @@ uv sync
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Linux**: `~/.config/claude-desktop/claude_desktop_config.json`
 
-### Step 7: Set Environment Variables
+### Step 8: Set Environment Variables
 
 Create a `.env` file in the `src/gemini-mcp-server` directory:
 
@@ -95,7 +102,7 @@ Create a `.env` file in the `src/gemini-mcp-server` directory:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### Step 8: Install Vulscan
+### Step 9: Install Vulscan
 
 Download and install the Vulscan NSE script for Nmap:
 
