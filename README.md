@@ -41,14 +41,21 @@ git clone <repository-url>
 cd mcp-vulnerability-scanner
 ```
 
-### Step 2: Install MCP Security Server
+### Step 2: Install Web Browsing MCP Server
+
+```bash
+uv venv
+uv pip install duckduckgo-mcp-server
+```
+
+### Step 3: Install MCP Security Server
 
 ```bash
 cd src/mcp-security
 uv sync
 ```
 
-### Step 3: Install Gemini MCP Server
+### Step 4: Install Gemini MCP Server
 
 ```bash
 cd src/gemini-mcp-server
@@ -56,25 +63,18 @@ npm install
 npm run build
 ```
 
-### Step 4: Install Filesystem MCP Server
+### Step 5: Install Filesystem MCP Server
 
 ```bash
 cd src/filesystem
 npm install
 ```
 
-### Step 5: Install SQLite MCP Server
+### Step 6: Install SQLite MCP Server
 
 ```bash
 cd src/sqlite
 uv sync
-```
-
-### Step 6: Install Web Browsing MCP Server
-
-```bash
-uv venv
-uv pip install duckduckgo-mcp-server
 ```
 
 ### Step 7: Configure Claude Desktop
