@@ -160,7 +160,7 @@ Run an aggressive Nmap scan with OS detection on 10.0.0.0/24 network
 ## 🤝 Acknowledgments
 
 - **Course**: Network and Information Security (CSE473)
-- **Instructor**: [Assistant Prof. Salih SARP]
+- **Instructor**: Assistant Prof. Salih SARP
 - **Institution**: Gebze Technical University
 - **Collaborators**: 
   - Çağla Nur Yuva (c.yuva2020@gtu.edu.tr - caglanur__2001@hotmail.com (github))
